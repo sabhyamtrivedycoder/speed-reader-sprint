@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SprintRead — RSVP Speed Reader</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="sprint-app">
+    <header class="header">
+      <div class="logo"><span>⚡</span><h1>SprintRead</h1></div>
+      <div class="wpm-box">
+        <label>Speed:</label>
+        <span id="wpmDisplay">350 WPM</span>
+        <input type="range" id="wpmSlider" min="150" max="800" value="350">
+      </div>
+    </header>
+    <div class="reading-stage">
+      <div class="focal-marker top"></div>
+      <div class="word-display" id="wordDisplay">READY</div>
+      <div class="focal-marker bottom"></div>
+    </div>
+    <div class="controls-row">
+      <button id="toggleBtn" class="btn primary">▶ Start Reading</button>
+      <button id="resetBtn" class="btn secondary">↺ Reset</button>
+    </div>
+    <div class="text-source-box">
+      <label>SOURCE ARTICLE</label>
+      <textarea id="articleInput">Rapid Serial Visual Presentation (RSVP) is a reading technique where words are flashed individually on a single focal point. By eliminating the eye movements required for traditional scanning across a page, RSVP can double or triple reading velocity while maintaining high comprehension.</textarea>
+    </div>
+    <footer>Engineered by <a href="https://sabhyamtrivedycoder.github.io/portfolio/">Sabhyam Trivedy</a> • Cognitive Speed Engine</footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
